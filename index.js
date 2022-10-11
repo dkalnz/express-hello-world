@@ -12,9 +12,9 @@ app.get('/', (request, response) => {
 
 // Default Route
 // What
-app.post('/', (req, res) => {
-	res.send(`hello ${req.body.name}`);
-});
+// app.post('/', (req, res) => {
+// 	res.send(`hello ${req.body.name}`);
+// });
 
 app.get('/year/:yr/:name', (req, res) => {
 	console.log(req.params);
@@ -23,6 +23,7 @@ app.get('/year/:yr/:name', (req, res) => {
 });
 
 app.post('/', (req, res) => {
+	console.log(req.body);
 	res.send('hello from the post route');
 });
 
